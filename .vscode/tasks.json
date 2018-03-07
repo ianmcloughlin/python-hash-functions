@@ -1,15 +1,19 @@
 {
-  "version": "0.1.0"
-  ,"_runner": "terminal"
+  "version": "2.0.0"
   , "tasks": [
     {
-      "taskName": "Compile",
+      "label": "Compile",
       "command": "python",
-      "isShellCommand": true,
-      "isBuildCommand": true,
-      "showOutput": "always",
+      "type": "process",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+    }
       "args": ["${relativeFile}"],
-      "presentation": {"panel": "new"},
+      "presentation": {
+        "panel": "new",
+        "reveal": "always",
+      }
     }
   ]
 }
