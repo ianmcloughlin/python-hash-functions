@@ -1,4 +1,4 @@
-	
+# https://www.pythoncentral.io/hashing-strings-with-python/	
 import hashlib
 
 # Available algorithms
